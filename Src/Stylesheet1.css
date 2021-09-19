@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.navbar{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 5%;
+}
+
+.navbar__brand{
+    width: 150px;
+    height: 100%;
+}
+
+.brand__name, .brand__tagline{
+    width: 100%;
+    height: 100%;
+}
+
+.brand__tagline{
+    letter-spacing: 2.5px;
+}
+
+.home__button, .about__button, .projects__button{
+    outline: none;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.button__container{
+    display: flex;
+    gap: 12px;
+    padding: 30 0;
+}
+
+.navbar__nav__items{
+    display: flex;
+    gap: 15px;
+}
+
+
+@media (min-width: 768px){
+
+    .button__container{
+        gap: 15px;
+    }
+
+}
+
+@media (min-width: 1024px){
+
+    .button__container{
+        gap: 25px;
+        padding: 50 15;
+    }
+
+    .navbar__brand{
+        width: 200px;
+    }
+    
+    .brand__name, .brand__tagline{
+        font-size: 20px;
+    }
+
+}
+
+@media (min-width: 1256px){
+
+}
