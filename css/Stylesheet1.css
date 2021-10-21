@@ -1,85 +1,99 @@
-*{
-    margin: 0;
-    padding: 0;
+*,
+*::before,
+*::after{
     box-sizing: border-box;
 }
 
+:root{
+
+    --ff-primary: 'Nunito', sans-serif;
+    --ff-secondary: 'Poppins', sans-serif;
+    --ff-temp: 'Rubik', sans-serif;
+
+    --fx-reg: 300;
+    --fw--bold: 900;
+
+    --clr-light:#fff;
+    --clr-dark: #1b1b1b;
+    --cle--accent: #a7a7a7;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+}
+
+/* -- Generel Styles -- */
 body{
-    background-color: black;
-    color: white;
-    font-family: 'Ubuntu', sans-serif;
+    background: var(--clr-dark);
+    color: var(--clr-light);
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+    letter-spacing: 1px;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+/* -- Typography -- */
+
+h1,h2,h3{
+    line-height: 1.1;
+    margin: 0;
+}
+
+h1
+{
+    font-size: var(--fs-h1);
+}
+
+h2
+{
+    font-size: var(--fs-h2);
+}
+
+h3
+{
+    font-size: var(--fs-h3);
+}
+
+.logo{
+    font-family: var(--ff-temp);
+    letter-spacing: 2.5px; 
 }
 
 
-.navbar{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 3% 5%;
+.section__title{
+
 }
 
-.navbar__brand{
-    width: 150px;
-    height: 100%;
+.section__subtitle{
+    margin: 0;
+    font-size: var(--fs-h3);
 }
 
-.brand__name, .brand__tagline{
-    width: 100%;
-    height: 100%;
-}
-
-.brand__tagline{
-    letter-spacing: 2.5px;
-}
-
-.home__button, .about__button, .projects__button{
-    outline: none;
-    border: none;
-    background: transparent;
-    color: white;
-    font-size: 16px;
-    font-weight: 200;
-}
-
-.button__container{
-    display: flex;
-    gap: 12px;
-    padding: 30 0;
-}
-
-.navbar__nav__items{
-    display: flex;
-    gap: 15px;
-}
-
-
-@media (min-width: 768px){
-
-    .button__container{
-        gap: 15px;
+/* -- Responsive Updates -- */
+@media (min-width: 768px)
+{
+    :root{
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
     }
+   
+}
+
+@media (min-width: 1024px)
+{
 
 }
 
-@media (min-width: 1024px){
-
-    .button__container{
-        gap: 25px;
-        padding: 50 15;
-    }
-
-    .navbar__brand{
-        width: 200px;
-    }
-    
-    .brand__name, .brand__tagline{
-        font-size: 20px;
-    }
-
-}
-
-@media (min-width: 1256px){
+@media (min-width: 1256px)
+{
 
 }
