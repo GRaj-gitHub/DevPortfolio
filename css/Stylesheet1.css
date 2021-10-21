@@ -20,6 +20,9 @@
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
     --fs-body: 1rem;
+
+    --bsh: .25em .25em .75em rgba(48, 48, 48, 0.25), 
+           .125em .125em .25em rgba(48, 48, 48, 0.15);
 }
 
 @media (min-width: 800px)
@@ -82,6 +85,8 @@ h3
 .logo{
     font-family: var(--ff-secondary);
     letter-spacing: 2.5px; 
+    /*margin-top: .5em;
+    margin-left: .25rem;*/
 }
 
 
@@ -125,10 +130,20 @@ nav{
     position: relative;
 }
 
+.intro__img{
+    box-shadow: var(--bsh);
+}
+
+.section__subtitle--intro{
+    display: inline-block;
+    padding: .4em .4em;
+}
 @media (min-width: 600px)
 {
    .intro {
        display: grid;
+       width: min-content;
+       margin: 0 auto;
        grid-column-gap: 1em;
        grid-template-areas: 
             "img title"
@@ -139,7 +154,20 @@ nav{
 
    .intro__img{
        grid-area: img;
-       min-width: 130px;
+       min-width: 140px;
+       position: relative;
+       z-index: 2;
+   }
+
+   .section__subtitle--intro{
+       align-self: start;
+       grid-column: -1/1;
+       grid-row: 2;
+       text-align: right;
+       position: relative;
+       left: -1rem;
+       width: calc(100% + 1.5em);
+       padding-right: .5em;
    }
 }
 
