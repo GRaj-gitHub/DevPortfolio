@@ -171,5 +171,9 @@ nav{
    }
 }
 
+/* -- About Me Section -- */ 
+.section__title{
+    color: var(--clr-accent);
+}
 
 
