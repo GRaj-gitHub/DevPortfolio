@@ -172,8 +172,17 @@ nav{
 }
 
 /* -- About Me Section -- */ 
-.section__title{
-    
+
+.section__paragraph--introduction{
+    position: relative;
+    text-align: justify;
+    line-height: 1.5;
 }
 
+.section__title--skills{
+    color: var(--clr-accent);
+}
 
+.skills{
+    position: relative;    
+}
