@@ -225,3 +225,12 @@ nav{
     text-align: center;
 }
 
+.section__title--projects::after{
+    content: '';
+    display: block;
+    width: 3.5em;
+    height: 2px;
+    margin-top: .2em;
+    background: var(--clr-accent);
+}
+
