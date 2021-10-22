@@ -198,14 +198,19 @@ nav{
     background: var(--clr-accent);
 }
 
-.skill{
-    
+.skills{
     display: flex;
+    flex-wrap: wrap;
+    padding-top: 1em;
+    border: solid 2px var(--clr-light);
+    border-radius: 25px;
+    color: var(--clr-accent);
 }
 
-.skills{
-    display: grid;
-    color: var(--clr-accent);
+.skill{
+    margin-bottom: 2em;
+    margin-left: 2.5em;
+    display: flex;
 }
 
 .skill__logo{
@@ -215,7 +220,8 @@ nav{
     width: 32px;
 }
 
-.section__title--resume{
+.resume{
     color: var(--clr-light);
+    text-align: center;
 }
 
