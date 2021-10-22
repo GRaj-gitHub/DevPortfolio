@@ -48,7 +48,7 @@ body{
 }
 
 section{
-    padding: 5em 2em;
+    padding: 1em 2em;
 }
 
 img{
@@ -198,10 +198,13 @@ nav{
     background: var(--clr-accent);
 }
 
+/* -- Skills and Resume Section -- */
+
 .skills{
     display: flex;
     flex-wrap: wrap;
-    padding-top: 1em;
+    padding-top: 2em;
+    margin: 1.5em 0;
     border: solid 2px var(--clr-light);
     border-radius: 25px;
     color: var(--clr-accent);
@@ -225,6 +228,24 @@ nav{
     text-align: center;
 }
 
+.button{
+    margin: .5em;
+    padding: .5em .6em;
+    background: var(--clr-accent);
+    border: none;
+    border-radius: 5px;
+}
+
+.button:hover{
+    background: var(--clr-light);
+}
+
+.btn{
+    text-decoration: none;
+    color: var(--clr-dark);
+}
+
+/* -- Portfolio Projects -- */
 .section__title--projects::after{
     content: '';
     display: block;
@@ -233,4 +254,27 @@ nav{
     margin-top: .2em;
     background: var(--clr-accent);
 }
+
+/* -- Footer -- */
+
+.contact__details{
+    margin: 1em 0;
+    background: var(--clr-accent);
+}
+
+.links__list{
+    display: flex;
+    justify-content: center;
+    padding: 1em 0;
+}
+
+.link{
+    margin-right: 2em;
+}
+
+.footer__link{
+    text-decoration: none;
+    color: var(--clr-dark);
+}
+
 
