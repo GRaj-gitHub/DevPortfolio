@@ -339,7 +339,18 @@ header{
 }
 
 /* -- Porfolio Page Configurations -- */
-.section__subtitle--format{
-    display: inline-block;
-    padding: .4em .4em;
+.potrfolio__links{
+    padding: 4em 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.link__logo__image{
+    text-decoration: none;
+    color: var(--clr-accent);
+}
+
+.link__logo__image:hover{
+    color: var(--clr-light);
 }
