@@ -37,6 +37,10 @@
 }
 
 /* -- Generel Styles -- */
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background: var(--clr-dark);
     color: var(--clr-light);
@@ -334,4 +338,8 @@ header{
     color: var(--clr-dark);
 }
 
-
+/* -- Porfolio Page Configurations -- */
+.section__subtitle--format{
+    display: inline-block;
+    padding: .4em .4em;
+}
