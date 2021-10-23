@@ -352,5 +352,27 @@ header{
 }
 
 .link__logo__image:hover{
-    color: var(--clr-light);
+  color: var(--clr-light);
+}
+
+@media (max-width: 460px){
+    
+    .link__logo__image,.fas{
+        font-size: 60px;
+    }
+
+   .link__logo__image, .fab{
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 400px){
+    
+    .link__logo__image,.fas{
+        font-size: 40px;
+    }
+
+   .link__logo__image, .fab{
+        font-size: 40px;
+    }
 }
