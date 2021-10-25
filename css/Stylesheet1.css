@@ -339,6 +339,26 @@ header{
 }
 
 /* -- Porfolio Page Configurations -- */
+
+.intro--portfolio{
+    margin: inherit;
+    display: table-cell
+}
+
+.secton__title--intro--projectname{
+    display: initial;
+    width: fit-content;
+    position: initial;
+}
+
+.section__subtitle--intro--format{
+    text-align: center;
+}
+
+.details{
+    font-size: var(--fs-h3);
+}
+
 .potrfolio__links{
     padding: 4em 2em;
     display: flex;
