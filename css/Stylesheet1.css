@@ -316,6 +316,27 @@ header{
     background: var(--clr-accent);
 }
 
+.portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.portfolio_project{
+    margin: 1em 0;
+    
+}
+
+.portfolio__item{
+    text-decoration: none;
+    color: var(--clr-light);
+}
+
+.project__title:hover{
+    font-size: 2rem;
+    color: var(--clr-accent);
+}
+
 /* -- Footer -- */
 
 .contact__details{
@@ -359,6 +380,16 @@ header{
     font-size: var(--fs-h3);
 }
 
+.video__link{
+    margin: 2em 0;
+    text-align: center;
+}
+
+.video{
+    border: solid 2px var(--clr-accent);
+    border-radius: 25px;
+    padding: 1em 1em;
+}
 .potrfolio__links{
     padding: 4em 2em;
     display: flex;
