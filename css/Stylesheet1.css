@@ -325,13 +325,13 @@ header{
     background: var(--clr-accent);
 }
 .portfolio{
-    display: flex;
+    display: grid;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .upcoming{
-    display: flex;
+    display: grid;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -445,13 +445,3 @@ header{
     
 }
 
-@media (max-width: 650px)
-{
-    .portfolio{
-        display: grid;
-    }
-
-    .upcoming{
-        display: grid;
-    }
-}
