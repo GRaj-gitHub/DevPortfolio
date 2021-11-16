@@ -325,13 +325,13 @@ header{
     background: var(--clr-accent);
 }
 .portfolio{
-    display: grid;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .upcoming{
-    display: grid;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -442,6 +442,14 @@ header{
    .link__logo__image, .fab{
         font-size: 40px;
     }
+    
+}
+
+@media (max-width: 650px){
+    
+   .portfolio,.upcoming{
+       display: grid;
+   }
     
 }
 
